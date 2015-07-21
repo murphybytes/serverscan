@@ -1,0 +1,10 @@
+<h1>Ping Results</h1>
+<p><%= link_to 'Manage Hosts', hosts_path %></p>
+
+
+<% @stats.each do |line| %>
+<div>
+  <%= raw line.gsub( "\n", "<br/>" ) %>
+</div>
+<br/><br/>
+<% end %>

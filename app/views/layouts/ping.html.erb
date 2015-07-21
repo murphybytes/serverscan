@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Serverscan</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <!-- refresh every 5 seconds -->
+  <meta http-equiv="refresh" content="5">
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
